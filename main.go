@@ -26,8 +26,7 @@ var replN = ep.MustReplaceN
 func processInfoCompte(by []byte) []byte {
 	by = replN(by, `// @name         InfoCompte`, `// @name         InfoCompte Ninja`, 1)
 	by = replN(by, `// @match        https://*.ogame.gameforge.com/game/*`, `{old}
-// @match        *127.0.0.1*/bots/*/browser/html/*
-// @match        *.ogame.ninja/bots/*/browser/html/*`, 1)
+// @match        *://*/bots/*/browser/html/*`, 1)
 	by = replN(by, `https://${ window.location.host }/game/index.php?`, `${window.location.protocol}//${window.location.host}${window.location.pathname}?`, 1)
 	return by
 }
