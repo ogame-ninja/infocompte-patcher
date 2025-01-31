@@ -7,7 +7,7 @@ import (
 func main() {
 	const (
 		webstoreURL       = "https://openuserjs.org/install/The_Stubbs/InfoCompte.user.js"
-		infocompte_sha256 = "cc12f9c7f17f09fc2fb947779ece471f79256db4bc9d7f882ecc99e6650b24ab"
+		infocompte_sha256 = "832a181d884efc688afe2e136285f1b852494862368236ff18bc4dadc67722c9"
 	)
 
 	files := []ep.FileAndProcessors{
